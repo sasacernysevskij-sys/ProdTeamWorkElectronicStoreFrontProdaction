@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './ComparePage.css';
 
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = 'https://mtac-shop-api.onrender.com';
 
 interface CompareProduct {
   id: number;

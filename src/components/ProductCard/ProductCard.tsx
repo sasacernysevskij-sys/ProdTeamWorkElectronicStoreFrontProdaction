@@ -53,13 +53,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
     try {
       if (isFavorite) {
-        await fetch(`http://localhost:8000/api/favorites/${product.id}`, {
+        await fetch(`https://mtac-shop-api.onrender.com/api/favorites/${product.id}`, {
           method: 'DELETE',
           headers: { 'Authorization': `Bearer ${token}` },
         });
         setIsFavorite(false);
       } else {
-        const res = await fetch('http://localhost:8000/api/favorites', {
+        const res = await fetch('https://mtac-shop-api.onrender.com/api/favorites', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
     }
 
     try {
-      const res = await fetch('http://localhost:8000/api/cart/items', {
+      const res = await fetch('https://mtac-shop-api.onrender.com/api/cart/items', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

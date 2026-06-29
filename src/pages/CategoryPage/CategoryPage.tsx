@@ -4,7 +4,7 @@ import ProductCard from '../../components/ProductCard/ProductCard';
 import type { Product } from '../../components/ProductCard/ProductCard';
 import './CategoryPage.css';
 
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = 'https://mtac-shop-api.onrender.com';
 
 interface CategoryPageProps {
   category: string;

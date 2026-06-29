@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './AuthModal.css';
 
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = 'https://mtac-shop-api.onrender.com';
 
 interface AuthModalProps {
   open: boolean;

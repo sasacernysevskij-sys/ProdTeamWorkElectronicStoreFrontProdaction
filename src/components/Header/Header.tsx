@@ -33,7 +33,7 @@ const Header = ({ onLoginClick, onRegisterClick, user, onLogout }: HeaderProps) 
     const token = localStorage.getItem('token');
     if (!token || !user) return;
 
-    fetch('http://localhost:8000/api/cart', {
+    fetch('https://mtac-shop-api.onrender.com/api/cart', {
       headers: { 'Authorization': `Bearer ${token}` },
     })
       .then(res => res.json())
